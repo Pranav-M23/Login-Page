@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+padding=0;
+background-image:url('login.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+}
+h1{
+text-align:center;
+}
+div{
+text-align:center;
+margin-left:20%;
+margin-top:20%;
+background-color:powderblue;
+}
+</style>
+</head>
+<body><h1>Login page</h1>
+<div>
+
+<form action="/action_page.php">
+
+<label for="Username">USERNAME </label> <br>
+<input type="text" id="Username" name="Username"placeholder="ENTER USERNAME" size="30" > <br>
+
+<label for="pwd">PASSWORD </label>
+<br> 
+<input type="password" id="pwd" name="pwd" placeholder="ENTER PASSWORD" size="30">
+<br><br>
+
+<label for="YOUR CAT TYPE">CAT TYPE </label> <br>
+
+ <input list="YOUR CAT TYPE" name="YOUR CAT TYPE"placeholder="ENTER YOUR CAT TYPE">
+  <datalist id="YOUR CAT TYPE">
+    <option value="Persian">
+    <option value="Miga">
+    <option value="Tuxedo">
+    <option value="orange">
+    
+  </datalist>
+
+<br>
+<label for="OTP">OTP</label><br>
+<input type="text" id="OTP" placeholder="OTP" size="4" maxlength="4" pattern="[1-9]{4}">
+<br><br>  
+<label for="DateofBirth">DATE_OF_BIRTH</label><br>
+<input type="date" id="DateofBirth" name="DateofBirth" min="31-12-2000" value="23-06-2005">
+<br>
+<input type="submit" value="submit">
+</form>
+</div>
+</body>
+</html>
